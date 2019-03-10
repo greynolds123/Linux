@@ -1,0 +1,77 @@
+looking for ssh in windows.
+
+c:/Users/{username}/.ssh/id_rsa (public-key) / not the private key
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDzSw8guI4SmDu4H98Rih8kV8Yq6bKzNf64Cp2pzNJUxbLWXw+IEdin+VarkFQc+H6Em4wmB/hqqpR0Pf/VXqpUQdyYnnHVHX6edgLLsfHhXLORwTRJHOS2/OuByb3AgDde0ENHdU+ZTjoAvvj0k4uPjT5Z+ls4ISqt/sIQS60mlgbD+KEiG1AdWS77sL2WlK11cgzBJZ7EakuOe8eMuITEaTuuqpdXttpGiqdszbL0KXeDxSm0yDbfjvu3WwjXaM1Jr0lNTwrlzwvNxrsv5DhgUNZI+RkqVBy80yNTdOv4BwnP+yVXwAOxGDfah4BSj0a1msmX1DmcvDiShIlBWU2v new@Tamarasroom
+
+
+
+install putty if you can not locate the .ssh
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+Installer
+MSI (‘Windows Installer’)
+64-bit: putty-64bit-0.70-installer.msi (or by FTP)  (signature)
+Unix source archive
+
+git hub url
+https://github.com/greynolds123
+
+ssh
+git@github.com:greynolds123/Linux.git
+
+https
+https://github.com/greynolds123/Linux.git
+
+Open the Git GUI
+Locate the folder using file 
+Create new to clone to initial the folder
+
+git config global user.name "Glynn D. Reynolds"
+git commit global user.email  glynnreynolds123@gmail.com
+
+1) git status 
+2) git add -A
+3) git commit -a -m "Adding new updates"
+4) git push Linux master
+
+What branch?
+git branch -a
+
+Need to change the branch!
+git branch -M master Development
+
+how to push a new branch..
+
+git push Linux Development
+
+___________________________________________
+
+How to maintain it?
+1) git status 
+2) git fetch Linux master 
+3) git status    
+4) git add -A  -> there are changes?
+5) git commit -a -m "New changes are added?
+6) git push Linux Development.
+
+
+git revert 90c96cf  -> to roll back changes
+
+To switch a branch you will have to check the branch
+
+git checkout Linux master
+
+__________________________________________________________
+Content out of sync
+
+1) git fetch "Your repo" Your branch
+2) git pull "Your repo" Your branch
+3) git add -A   -> if there is changes 
+4) git commit -a -m "The reason you are commiting"
+5) git push "Your repo" Your banch
+
+git merge Linux master --allow-unrelated-histories
+git pull Linux master --allow-unrelated-histories
+
+

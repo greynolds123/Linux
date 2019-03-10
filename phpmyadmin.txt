@@ -1,0 +1,15 @@
+user     = debian-sys-maint
+password = 4XwNfh3jA7p7yp6N
+
+
+ CREATE USER 'root'@'10.106.3.125' IDENTIFIED BY '$Glynn123';
+
+ GRANT ALL PRIVILEGES ON * . * TO 'root'@'10.106.3.125';
+
+ CREATE USER 'root'@'lampStack' IDENTIFIED BY '$Glynn123';
+ 
+ GRANT ALL PRIVILEGES ON * . * TO 'root'@'lampStack';
+
+ CREATE USER 'root'@'localhost' IDENTIFIED BY '$Glynn123';
+ 
+ GRANT ALL PRIVILEGES ON * . * TO 'root'@'localhost';

@@ -1,0 +1,42 @@
+Redhat Satellite 6 -> controls the life cycle
+
+Package content
+Packet management  
+Subscribe and provision system
+Manage system hardware and software details
+Reports and monitoring
+
+
+
+Video of the capsule server
+https://access.redhat.com/videos/1517403
+
+Which repos (Main)
+All packages
+kickstart -> tree
+common software ->
+Satellite -> tool software channel
+
+go to contents then products to sync
+
+select the repos to sync.. (takes a while)
+
+New Media
+Check installation media for the kick start tree
+
+Content view ->  Snapshots -> to promote to different 
+environment.
+
+Life cycle Environment Paths -> create environments
+-> Create a view
+     Live accessible repos
+
+promote from library to development, from development 
+to QE, from QE to production
+
+Create a filter to exclude older versions of a packet
+to install a newer package.
+
+The publish the view.
+
+

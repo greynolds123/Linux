@@ -1,0 +1,30 @@
+ACT5-2 smb.conf
+
+1. A session begins with the name of the section in square brackets and continues to the next section begins.
+1a. name = value is the form
+
+2. [global], [homes] and [printers], which are described under special sections.
+
+ Global - Applies to the server as a whole
+ Homes  - include configuration files and servies connecting clients to their home directories.
+ Printer - Works like home but for printers
+
+3. What security issue arises if you give users guest access to the homes section?
+   Anyone can view their shares
+
+4. What is "usershares", and in what section is it controlled?
+   This parameter controls whether user defined shares are allowed to be accessed by non-authenticated
+   users or not.
+
+5. What is a "parameter", and what is its fomat (how is it written)?
+   This parameter controls whether user defined shares are allowed to be accessed by non-authenticated
+   users or not
+      
+6. Are sections and parameters case sensitive?
+   no
+  
+7. Is white space in a section or parameter significant, ie do you have to include it around the equals sign ( = ), or use quotes around text?
+   yes, it ensure the use of space in the group name or user name is understood.
+
+8. What is the significance of a ( ; ) or a ( # ) at the beginning of a line? How and why are they used (examine the first section of the /etc/samba/smb.conf file to answer this one)?
+   The ; will not commit or not read a specific line or configuration   

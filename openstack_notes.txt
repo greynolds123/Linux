@@ -1,0 +1,61 @@
+openstack notes.....
+
+Keystone
+Provides identity and its intergrated functions
+for authentication, catalog services and policies 
+to register and manage different tennants and
+users in an opentacks prorject.
+Ensures the right api requests are processed
+
+Swift
+Cloud storage! It is an object storage software
+Advantages:
+1) No central brain( no sigle point of failure )
+SPOF
+2) Curative indicates autorevovery in case of 
+failure
+3) Highly scalable for large petabytes store 
+sccess by scaling horizontally
+4) Better performance, which is ashieved by 
+spreading the load over the storage nodes.
+5) Inexpensive harware can be used foir redundant
+storage clusters.
+You can store virtual disks, images, backup archiving
+
+
+Glance
+Stores the metada of images. Infomation like kernel,
+disk images, disk format. It is an image registry.
+It queries images from Image Service API provided
+by glance.
+
+Cinder
+Management of the persistence block storage.
+It presents block-level storage provides raw volumes
+that can be built into logical volumes in the 
+file systems and mounted in the virtual machine.
+Features:
+1) Volume management
+ a) create and delete volumes
+2) Snapshot Management
+ a) create and delete snapshot volumes
+
+You can attach/delete volume.
+You can clone volume
+You can crate volume from snapshots
+You can copy images to volumes
+
+Types of storage based on an expectation
+Performance   -> Block Storage
+Database      -> Block Storage
+Restoraing Backup ->  Object and Block Storage
+Setup for Volumes providers -> Block Storage
+Persistance -> Object and Block Storage
+Access  -> Anywhere snd within the VM
+Image store -> object Storage
+
+Cinder features are delivered by orchestrating 
+volume providers through setup driver's architecture
+IBM, netapp, Nexenta, and Vmware
+
+Nova
